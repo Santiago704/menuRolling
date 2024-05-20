@@ -2,7 +2,9 @@ package com.mycompany.menurolling;
 
 public class Hoteles {
     private String infoHotel;
-    private String[] vecHoteles = {"Hielton es: Calificación: 4,0 de 5,0 DesdeCOP$382,788", "Jardin", "Casa San Agustin", "Grand sirenis san Andres", "La quinta", "nh hoteles"};
+    private final String[] vecHoteles = {"Hielton es: Calificacion: 4,0 de 5,0 DesdeCOP$382,788", "Jardin Calificacion: 4,3 de 5,0 DesdeCOP$400,788", 
+        "Casa San Agustin Calificacion: 3,9 de 5,0 DesdeCOP$300,000", "Grand sirenis san Andres Calificacion: 3,5 de 5,0 DesdeCOP$365,00", 
+        "La quinta Calificacion: 4,5 de 5,0 DesdeCOP$300,025", "nh hoteles Calificacion: 4,3 de 5,0 DesdeCOP$400,000"};
     
     
     //Constructor de de la clase Hoteles
@@ -27,9 +29,9 @@ public class Hoteles {
     //hace la busqueda de los hoteles
     public void setHotel(int numHotel) {
         
-        for (int i = 0; i < vecHoteles.length; i++) {
+        for (int i = 0; i < vecHoteles.length+1; i++) {
             if (numHotel==7) {
-                infoHotel="Usted ha salido del hotel";
+                infoHotel="Usted ha salido del menu hoteles";
             }else if(i==numHotel) {
                 infoHotel =vecHoteles[i-1];
             } 
