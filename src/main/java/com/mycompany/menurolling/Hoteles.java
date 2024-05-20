@@ -2,7 +2,7 @@ package com.mycompany.menurolling;
 
 public class Hoteles {
     private String infoHotel;
-    private final String[] vecHoteles = {"Hielton es: Calificacion: 4,0 de 5,0 DesdeCOP$382,788", "Jardin Calificacion: 4,3 de 5,0 DesdeCOP$400,788", 
+    private final String[] vecHoteles = {"Hilton es: Calificacion: 4,0 de 5,0 DesdeCOP$382,788", "Jardin Calificacion: 4,3 de 5,0 DesdeCOP$400,788", 
         "Casa San Agustin Calificacion: 3,9 de 5,0 DesdeCOP$300,000", "Grand sirenis san Andres Calificacion: 3,5 de 5,0 DesdeCOP$365,00", 
         "La quinta Calificacion: 4,5 de 5,0 DesdeCOP$300,025", "nh hoteles Calificacion: 4,3 de 5,0 DesdeCOP$400,000"};
     
@@ -21,7 +21,7 @@ public class Hoteles {
         System.out.println("|| 4.Grand sirenis san Andres||");
         System.out.println("|| 5.La quinta               ||");
         System.out.println("|| 6.NH hoteles              ||");
-        System.out.println("|| 7.Volver                  ||");
+        System.out.println("|| 7.Volver al menu inicial  ||");
         System.out.println("-------------------------------");
         System.out.println("Digite el numero del hotel que desea informacion:");
         return null;

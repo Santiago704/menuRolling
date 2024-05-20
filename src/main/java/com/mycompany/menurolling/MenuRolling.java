@@ -8,6 +8,7 @@ public class MenuRolling {
         /*0.0 Declaracion de variables*/
         int digitoMenu1 = 0;
         int digitoMenu2 = 0;
+        int digitoMenu3 = 0;
         
         Scanner leer = new Scanner(System.in);
         
@@ -38,12 +39,18 @@ public class MenuRolling {
                     }while(digitoMenu2!=7);
                     break;
                 case 2:
-                    System.out.println("Planes disponibles");
+                    do{
+                    Planes plan1 = new Planes();
+                    plan1.setMenu();
+                    digitoMenu3 = leer.nextInt(); leer.nextLine();
+                    }while(digitoMenu3!=5);
                     break;
                 case 3:
                     System.out.println("Agendar plan");
+                    break;
                 case 4:
                     System.out.println("Usted salio del menu");
+                    break;
                 default:
                     System.out.println("Usted digito el un numero incorrecto digite de nuevo");
             }
