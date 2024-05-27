@@ -43,6 +43,8 @@ public class MenuRolling {
                     Planes plan1 = new Planes();
                     plan1.setMenu();
                     digitoMenu3 = leer.nextInt(); leer.nextLine();
+                    plan1.setPlan(digitoMenu3);
+                    System.out.println("La informacion del plan "+plan1.getPlan());
                     }while(digitoMenu3!=5);
                     break;
                 case 3:
