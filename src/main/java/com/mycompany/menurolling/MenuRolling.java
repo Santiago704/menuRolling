@@ -9,6 +9,7 @@ public class MenuRolling {
         int digitoMenu1 = 0;
         int digitoMenu2 = 0;
         int digitoMenu3 = 0;
+        int digitoMenu4 = 0;
         
         Scanner leer = new Scanner(System.in);
         
@@ -48,7 +49,9 @@ public class MenuRolling {
                     }while(digitoMenu3!=5);
                     break;
                 case 3:
-                    System.out.println("Agendar plan");
+                    Reserva reserva1 = new Reserva();
+                    reserva1.setMenu();
+                    digitoMenu4 = leer.nextInt(); leer.nextLine();
                     break;
                 case 4:
                     System.out.println("Usted salio del menu");
