@@ -10,6 +10,8 @@ public class MenuRolling {
         int digitoMenu2 = 0;
         int digitoMenu3 = 0;
         int digitoMenu4 = 0;
+        int tiempoReserva;
+        int numDias;
         
         Scanner leer = new Scanner(System.in);
         
@@ -49,9 +51,18 @@ public class MenuRolling {
                     }while(digitoMenu3!=5);
                     break;
                 case 3:
-                    Reserva reserva1 = new Reserva();
+                    System.out.println("Cuantos dias deseas reservar:");
+                    tiempoReserva = leer.nextInt(); leer.nextLine();
+                    Reserva reserva1 = new Reserva(tiempoReserva);
                     reserva1.setMenu();
                     digitoMenu4 = leer.nextInt(); leer.nextLine();
+                    System.out.println("-----------------------------------------");
+                    System.out.println("|| Su plan ha sigo agendado con extito ||");
+                    System.out.println("-----------------------------------------");
+                    System.out.println("  Tiene un costo de "+reserva1.getPrecio(digitoMenu4, tiempoReserva)+"$");
+                    System.out.println("  Para "+tiempoReserva+" dias");
+                    System.out.println("  En el tour "+ reserva1.getTour(digitoMenu4));
+                    System.out.println("-----------------------------------------");
                     break;
                 case 4:
                     System.out.println("Usted salio del menu");
