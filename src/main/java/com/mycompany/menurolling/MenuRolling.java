@@ -34,7 +34,7 @@ public class MenuRolling {
             switch(digitoMenu1){
                 case 1:
                     do{
-                    Hoteles hotel = new Hoteles();
+                    Hoteles hotel = new Hoteles(); 
                     hotel.setMenu();
                     digitoMenu2 = leer.nextInt(); leer.nextLine();
                     hotel.setHotel(digitoMenu2);

@@ -11,7 +11,7 @@ public class Hoteles {
     public Hoteles(){
         //this.nombres=nombres;
     }
-    public String setMenu(){
+    public void setMenu(){
         System.out.println("_______________________________");
         System.out.println("||           Hoteles         ||");
         System.out.println("-------------------------------");
@@ -24,8 +24,8 @@ public class Hoteles {
         System.out.println("|| 7.Volver al menu inicial  ||");
         System.out.println("-------------------------------");
         System.out.println("Digite el numero del hotel que desea informacion:");
-        return null;
     }
+    
     //hace la busqueda de los hoteles
     public void setHotel(int numHotel) {
         
@@ -39,5 +39,5 @@ public class Hoteles {
     }
      public String getHotel() {
         return infoHotel;
-    }
+    }    
 }

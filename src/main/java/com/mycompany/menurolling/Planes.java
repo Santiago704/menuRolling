@@ -8,7 +8,7 @@ public class Planes {
     public Planes() {
     }
     
-    public String setMenu(){
+    public void setMenu(){
         System.out.println("_______________________________");
         System.out.println("||        Menu Planes        ||");
         System.out.println("-------------------------------");
@@ -20,10 +20,9 @@ public class Planes {
         }
         System.out.println("-------------------------------");
         System.out.println("Digite el numero del plan que desea informacion:");
-        return null;
     }
+    
     public void setPlan(int numHotel) {
-        
         for (int i = 0; i < infoPlanes.length+1; i++) {
             if (numHotel==5) {
                 informacion="Usted ha salido del menu hoteles";
