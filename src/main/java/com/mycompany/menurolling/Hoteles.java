@@ -9,8 +9,8 @@ public class Hoteles {
     
     //Constructor de de la clase Hoteles
     public Hoteles(){
-        //this.nombres=nombres;
     }
+    
     public void setMenu(){
         System.out.println("_______________________________");
         System.out.println("||           Hoteles         ||");
@@ -37,7 +37,7 @@ public class Hoteles {
             } 
         }
     }
-     public String getHotel() {
+    public String getHotel() {
         return infoHotel;
     }    
 }
